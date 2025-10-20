@@ -1,0 +1,42 @@
+<?php
+session_start(); // Start the session
+
+// Example session username (in a real case, this is set after login)
+if (!isset($_SESSION['username'])) {
+    $_SESSION['username'] = "Khalifa"; // default for demonstration
+}
+?>
+<html>
+<head>
+    <title>Welcome Page</title>
+    <style>
+        body {
+            background-color: darkseagreen;
+        }
+
+        th:hover {
+            color: red;
+        }
+
+        th {
+            background-color: azure;
+            color: green;
+        } 
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Menu -->
+    <a href="index.html">Home</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="index.php">Add product</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="product list.php">LIST OF IMPORT</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="logout.php">Logout</a>
+
+    <!-- Welcome Message -->
+    <h2>Welcome, <?php echo htmlspecialchars($_SESSION['username']); ?>!</h2>
+
+    <img src="agri.jpg" height="468" width="1260" alt="rwanda.jpg">
+
+</body>
+</html>
+

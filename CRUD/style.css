@@ -1,0 +1,40 @@
+    
+            body{
+                font-family: Arial, sans-serif;
+            background-color: gray;
+            }
+        th:hover
+            {
+                color: lightseagreen;
+            }
+            
+         th{
+            background-color: grey;
+            color: burlywood;
+           
+        }
+        
+        h1{
+           font-family: monospace;
+         
+           }
+  
+        
+        .form-align{
+            text-align: left;
+        }
+        .btn{
+              font-family: 30px;  
+            font-size: 20px;
+            background-color: blue; 
+        }
+        input{
+            height: 30px;
+           width: auto;
+        }
+
+        body{
+            background-image: url('rwand.jpg');
+        }   
+
+         
